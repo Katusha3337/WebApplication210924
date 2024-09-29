@@ -1,0 +1,31 @@
+﻿@model User
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Информация о пользователе</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="my-4">Информация о пользователе</h1>
+
+        <h2>Использование ViewBag</h2>
+        <p>Имя: @ViewBag.UserName</p>
+        <p>Возраст: @ViewBag.UserAge</p>
+        <p>Email: @ViewBag.UserEmail</p>
+
+        <h2>Использование ViewData</h2>
+        <p>Имя: @ViewData["UserName"]</p>
+        <p>Возраст: @ViewData["UserAge"]</p>
+        <p>Email: @ViewData["UserEmail"]</p>
+
+        <h2>Использование модели</h2>
+        <p>Имя: @Model.Name</p>
+        <p>Возраст: @Model.Age</p>
+        <p>Email: @Model.Email</p>
+    </div>
+</body>
+</html>
